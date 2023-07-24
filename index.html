@@ -32,7 +32,11 @@
           extend: {
             colors: {
               clifford: "#da373d",
-              "bike-primary": "#E76F51",
+              "nav-text": "#000",
+              "primary-btn": "#E76F51",
+              "text-news": "#0A0826",
+              "news-head": "text-gray-900, #18191F",
+              "news-des": "#6C6C6C",
               "bike-carousel": "rgba(231, 111, 81, 0.10)",
               "carousel-para": "rgba(0, 0, 0, 0.80)",
             },
@@ -44,6 +48,15 @@
     <style>
       .font-poppins {
         font-family: "Poppins", sans-serif;
+      }
+      .btn-latest {
+        border-radius: 5px;
+        border: 1px solid #e76f51;
+        color: #e76f51;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 15px;
       }
     </style>
   </head>
@@ -73,7 +86,7 @@
               </label>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base text-nav-text"
               >
                 <li><a>Home</a></li>
                 <li><a>Shop</a></li>
@@ -81,12 +94,13 @@
                 <li><a>Contact</a></li>
               </ul>
             </div>
-            <a class="btn btn-ghost normal-case text-xl md:text-4xl"
+            <a
+              class="btn btn-ghost normal-case text-xl md:text-4xl text-nav-text"
               >Biker Zone</a
             >
           </div>
           <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1 text-base">
+            <ul class="menu menu-horizontal px-1 text-base text-nav-text">
               <li><a>Home</a></li>
               <li><a>Shop</a></li>
               <li><a>News</a></li>
@@ -94,7 +108,7 @@
             </ul>
           </div>
           <div class="">
-            <a class="btn bg-bike-primary text-base text-white px-9">Login</a>
+            <a class="btn bg-primary-btn text-base text-white px-9">Login</a>
           </div>
         </div>
       </nav>
@@ -115,7 +129,7 @@
                 <br />
                 duis enim velit mollit.
               </p>
-              <button class="btn bg-bike-primary text-base text-white px-7">
+              <button class="btn bg-primary-btn text-base text-white px-7">
                 Purchase
               </button>
             </div>
@@ -144,7 +158,7 @@
                 <br />
                 duis enim velit mollit.
               </p>
-              <button class="btn bg-bike-primary text-base text-white px-7">
+              <button class="btn bg-primary-btn text-base text-white px-7">
                 Purchase
               </button>
             </div>
@@ -173,7 +187,7 @@
                 <br />
                 duis enim velit mollit.
               </p>
-              <button class="btn bg-bike-primary text-base text-white px-7">
+              <button class="btn bg-primary-btn text-base text-white px-7">
                 Purchase
               </button>
             </div>
@@ -202,7 +216,7 @@
                 <br />
                 duis enim velit mollit.
               </p>
-              <button class="btn bg-bike-primary text-base text-white px-7">
+              <button class="btn bg-primary-btn text-base text-white px-7">
                 Purchase
               </button>
             </div>
@@ -219,7 +233,91 @@
         </div>
       </div>
     </header>
-    <main class="md:container md:mx-auto"></main>
+    <main class="md:container md:mx-auto">
+      <!-- Featured Bike section -->
+      <section></section>
+
+      <!-- Latest News section -->
+      <section class="mt-32">
+        <h2 class="text-center text-text-news text-5xl font-semibold mb-12">
+          Latest News
+        </h2>
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-3">
+          <!-- card 1 -->
+          <div class="card card-compact bg-base-100 shadow-xl">
+            <figure>
+              <img src="./images/others/latest1.png" alt="latest-1" />
+            </figure>
+            <div class="card-body lg:mx-6">
+              <h2
+                class="card-title mt-10 text-news-head text-3xl font-semibold"
+              >
+                Ducati XDIAVEL S-73
+              </h2>
+              <p class="text-news-des text-base font-normal leading-8 mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                fermentum amet faucibus sed id nisi lectus at.
+              </p>
+              <div class="card-actions mt-10">
+                <button
+                  class="btn-latest hover:bg-primary-btn hover:text-white"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="card card-compact bg-base-100 shadow-xl">
+            <figure>
+              <img src="./images/others/latest2.png" alt="latest-1" />
+            </figure>
+            <div class="card-body lg:mx-6">
+              <h2
+                class="card-title mt-10 text-news-head text-3xl font-semibold"
+              >
+                Motorcycles & Scooters
+              </h2>
+              <p class="text-news-des text-base font-normal leading-8 mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                fermentum amet faucibus sed id nisi lectus at.
+              </p>
+              <div class="card-actions mt-10">
+                <button
+                  class="btn-latest hover:bg-primary-btn hover:text-white"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="card card-compact bg-base-100 shadow-xl">
+            <figure>
+              <img src="./images/others/latest3.png" alt="latest-1" />
+            </figure>
+            <div class="card-body lg:mx-6">
+              <h2
+                class="card-title mt-10 text-news-head text-3xl font-semibold"
+              >
+                2021 Honda CBR500R
+              </h2>
+              <p class="text-news-des text-base font-normal leading-8 mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                fermentum amet faucibus sed id nisi lectus at.
+              </p>
+              <div class="card-actions mt-10">
+                <button
+                  class="btn-latest hover:bg-primary-btn hover:text-white"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
